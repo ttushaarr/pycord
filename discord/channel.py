@@ -868,7 +868,7 @@ class TextChannel(discord.abc.Messageable, _TextChannel):
 
         Returns
         -------
-        :class:`.TextChannel`] | :obj:`None`
+        :class:`.TextChannel` | :obj:`None`
             The newly edited text channel. If the edit was only positional
             then ``None`` is returned instead.
 
@@ -1746,7 +1746,7 @@ class VoiceChannel(discord.abc.Messageable, VocalGuildChannel):
         The channel's preferred audio bitrate in bits per second.
     user_limit: :class:`int`
         The channel's limit for number of members that can be in a voice channel.
-    :class:`VoiceRegion` | :obj:`None`
+    rtc_region: :class:`VoiceRegion` | :obj:`None`
         The region for the voice channel's voice communication.
         A value of ``None`` indicates automatic voice region detection.
 
@@ -2324,7 +2324,7 @@ class StageChannel(discord.abc.Messageable, VocalGuildChannel):
         The channel's preferred audio bitrate in bits per second.
     user_limit: :class:`int`
         The channel's limit for number of members that can be in a stage channel.
-    :class:`VoiceRegion` | :obj:`None`
+    rtc_region: :class:`VoiceRegion` | :obj:`None`
         The region for the stage channel's voice communication.
         A value of ``None`` indicates automatic voice region detection.
     video_quality_mode: :class:`VideoQualityMode`
